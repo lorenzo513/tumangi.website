@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Indice Ricette - Tumangi</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container container-info">
+    <h1 class="title-ingredient">Ricette</h1>
+
+    <div class="recipes-controls">
+      <label for="search-input" class="visually-hidden">Cerca ricette</label>
+      <input id="search-input" class="search-input" type="search" placeholder="Cerca per titolo, tag o ingrediente..." />
+
+      <label for="tag-filter" class="visually-hidden">Filtra per tag</label>
+      <select id="tag-filter" class="filter-select" aria-label="Filtra per tag">
+        <option value="">— Filtra per tag —</option>
+      </select>
+
+      <button id="clear-filters" class="btn btn-clear" type="button">Pulisci filtri</button>
+    </div>
+
+    <div id="recipes-list" class="recipes-grid" aria-live="polite">
+      <!-- Render delle ricette qui -->
+    </div>
+
+    <p id="no-results" class="no-results" style="display:none; margin-top:16px;">Nessuna ricetta trovata.</p>
+
+    <div style="margin-top:24px;">
+      <a href="../index.html" class="home-link">Torna alla Home</a>
+    </div>
+  </div>
+
+  <script src="js/recipe-index.js"></script>
+</body>
+</html>

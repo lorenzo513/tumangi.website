@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="ingredient-id" content="patate">
+  <meta name="ingredient-id" content="latte">
+  <meta name="recipe-tags" content="contorno, vegetariano, facile">
+  <title>Purea di Patate - Ricetta - Tumangi</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <div class="container container-recipe">
+    <h1 class="title-protein">Purea di Patate</h1>
+    <p class="recipe-subtitle">Un classico contorno cremoso e avvolgente, perfetto per accompagnare ogni piatto.</p>
+
+    <div class="recipe-info">
+      <span>⏱️ Tempo: 30 minuti</span>
+      <span>👥 Porzioni: 4</span>
+      <span>🌶️ Difficoltà: Facile</span>
+    </div>
+
+    <h2>Ingredienti</h2>
+    <div class="ingredients-section">
+      <ul>
+        <li><span data-ingredient-index="0">1</span> kg di <a href="../verdura.html">patate</a> (farinosi)</li>
+        <li><span data-ingredient-index="1">200</span> ml di <a href="../latticini.html">latte</a> intero caldo</li>
+        <li><span data-ingredient-index="2">50</span>g di burro</li>
+        <li>Sale q.b.</li>
+        <li>Noce moscata q.b.</li>
+      </ul>
+    </div>
+
+    <h2>Preparazione</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Cuoci le patate</h3>
+          <p>Lava bene le patate e lessale con la buccia in abbondante acqua salata finché non saranno tenere (circa 20-25 minuti). Scolale e lasciale intiepidire leggermente.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Sbuccia e schiaccia</h3>
+          <p>Sbuccia le patate ancora calde e passale nello schiacciapatate direttamente in una pentola capiente.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Prepara la purea</h3>
+          <p>Aggiungi il burro a pezzetti alle patate schiacciate e mescola bene finché non si sarà sciolto. Incorpora gradualmente il latte caldo, mescolando energicamente con un cucchiaio di legno o una frusta per ottenere una purea liscia e senza grumi. Aggiusta di sale e noce moscata grattugiata.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Servi</h3>
+          <p>Servi la purea di patate calda, guarnita a piacere con una noce di burro o del prezzemolo tritato.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Varianti e Consigli</h2>
+    <div class="variants">
+      <div class="variant">
+        <h3>Purea al formaggio</h3>
+        <p>Aggiungi del parmigiano grattugiato o un altro formaggio a pasta filata per un sapore più ricco.</p>
+      </div>
+      <div class="variant">
+        <h3>Purea alle erbe</h3>
+        <p>Incorpora erbe aromatiche tritate come rosmarino o timo per un tocco profumato.</p>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../ricette.html">Torna alle Ricette</a>
+      <a href="../../index.html">Torna alla Home</a>
+    </div>
+  </div>
+
+  <script src="../js/portion-selector.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const ingredients = [
+        { name: "patate", amount: 1, unit: "kg" },
+        { name: "latte intero", amount: 200, unit: "ml" },
+        { name: "burro", amount: 50, unit: "g" }
+      ];
+
+      new PortionSelector(
+        document.querySelector('.container-recipe'),
+        4, // porzioni originali
+        ingredients
+      );
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!-- FILE 9: scaloppine-tacchino-spinaci.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="ingredient-id" content="tacchino">
+  <meta name="ingredient-id" content="spinaci">
+  <meta name="recipe-tags" content="secondo-piatto, rapido, proteine">
+  <title>Scaloppine di Tacchino con Spinaci - Ricetta - Tumangi</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <div class="container container-recipe">
+    <h1 class="title-protein">Scaloppine di Tacchino con Spinaci</h1>
+    <p class="recipe-subtitle">Un secondo leggero e veloce: scaloppine dorate e spinaci saltati, pronto in pochi minuti.</p>
+
+    <div class="recipe-info">
+      <span>⏱️ Tempo: 20 minuti</span>
+      <span>👥 Porzioni: 4</span>
+      <span>🌶️ Difficoltà: Facile</span>
+    </div>
+
+    <h2>Ingredienti</h2>
+    <div class="ingredients-section">
+      <ul>
+        <li><span data-ingredient-index="0">8</span> scaloppine di <a href="../carne-bianca.html">tacchino</a> (sottili)</li>
+        <li><span data-ingredient-index="1">400</span>g di <a href="../verdura-foglia-verde.html">spinaci</a> freschi</li>
+        <li>Farina q.b. per infarinare</li>
+        <li><span data-ingredient-index="2">2</span> cucchiai di olio extravergine di oliva</li>
+        <li><span data-ingredient-index="3">20</span>g di burro (opzionale)</li>
+        <li><span data-ingredient-index="4">1</span> spicchio d'aglio</li>
+        <li><span data-ingredient-index="5">1</span> cucchiaio di vino bianco (facoltativo)</li>
+        <li>Sale e pepe q.b.</li>
+        <li>Succo di limone e prezzemolo per servire</li>
+      </ul>
+    </div>
+
+    <h2>Preparazione</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Prepara le scaloppine</h3>
+          <p>Asciuga le scaloppine con carta assorbente e infarinale leggermente, scrollando via l'eccesso.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Rosola</h3>
+          <p>Scalda una padella con 1 cucchiaio di olio e il burro; cuoci le scaloppine 1–2 minuti per lato a fuoco vivo fino a doratura. Sala e pepa e tieni al caldo.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Spinaci</h3>
+          <p>Nella stessa padella aggiungi un filo d'olio e l'aglio schiacciato; aggiungi gli spinaci lavati e cuoci a fiamma alta finché appassiscono (1–3 minuti). Sala, pepa e aggiungi una spruzzata di limone se gradita.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Unisci e servi</h3>
+          <p>Se vuoi, sfuma la padella con un cucchiaio di vino bianco e fai evaporare; rimetti le scaloppine per un minuto per insaporire. Disponi gli spinaci sul piatto e adagia le scaloppine sopra. Guarnisci con prezzemolo tritato e un filo d'olio.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Varianti e Consigli</h2>
+    <div class="variants">
+      <div class="variant">
+        <h3>Con capperi</h3>
+        <p>Aggiungi capperi dissalati alla fine per una nota sapida.</p>
+      </div>
+      <div class="variant">
+        <h3>Con panna</h3>
+        <p>Per una versione più cremosa aggiungi una cucchiaiata di panna al fondo di cottura.</p>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../ricette.html">Torna alle Ricette</a>
+      <a href="../../index.html">Torna alla Home</a>
+    </div>
+  </div>
+
+  <script src="../js/portion-selector.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const ingredients = [
+        { name: "scaloppine di tacchino", amount: 8, unit: "sottili" },
+        { name: "spinaci freschi", amount: 400, unit: "g" },
+        { name: "olio extravergine di oliva", amount: 2, unit: "cucchiai" },
+        { name: "burro", amount: 20, unit: "g" },
+        { name: "aglio", amount: 1, unit: "spicchio" },
+        { name: "vino bianco", amount: 1, unit: "cucchiaio" }
+      ];
+
+      new PortionSelector(
+        document.querySelector('.container-recipe'),
+        4, // porzioni originali
+        ingredients
+      );
+    });
+  </script>
+</body>
+</html>

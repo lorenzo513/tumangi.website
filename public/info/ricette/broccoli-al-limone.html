@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="ingredient-id" content="broccoli">
+  <meta name="ingredient-id" content="limone">
+  <meta name="recipe-tags" content="contorno, vegetariano, leggero">
+  <title>Broccoli al Limone - Ricetta - Tumangi</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <div class="container container-recipe">
+    <h1 class="title-protein">Broccoli al Limone</h1>
+    <p class="recipe-subtitle">Un contorno fresco e leggero, perfetto per accompagnare secondi piatti di carne o pesce.</p>
+
+    <div class="recipe-info">
+      <span>⏱️ Tempo: 20 minuti</span>
+      <span>👥 Porzioni: 4</span>
+      <span>🌶️ Difficoltà: Facile</span>
+    </div>
+
+    <h2>Ingredienti</h2>
+    <div class="ingredients-section">
+      <ul>
+        <li><span data-ingredient-index="0">500</span>g di <a href="../verdura.html">broccoli</a></li>
+        <li><span data-ingredient-index="1">1</span> <a href="../frutta.html">limone</a> (succo e scorza)</li>
+        <li><span data-ingredient-index="2">2</span> cucchiai di olio extravergine di oliva</li>
+        <li><span data-ingredient-index="3">1</span> spicchio d'aglio</li>
+        <li>Sale e pepe q.b.</li>
+        <li>Peperoncino (facoltativo)</li>
+      </ul>
+    </div>
+
+    <h2>Preparazione</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Prepara i broccoli</h3>
+          <p>Lava i broccoli e dividili in cimette. Se i gambi sono teneri, puoi pelarli e tagliarli a rondelle.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Cuoci i broccoli</h3>
+          <p>Cuoci i broccoli a vapore per circa 8-10 minuti, o finché non saranno teneri ma ancora croccanti. In alternativa, puoi lessarli in acqua bollente salata per 5-7 minuti.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Condisci</h3>
+          <p>In una padella, scalda l'olio extravergine di oliva con lo spicchio d'aglio (e il peperoncino, se lo usi). Aggiungi i broccoli cotti e saltali per un paio di minuti.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Finitura</h3>
+          <p>Spegni il fuoco, rimuovi l'aglio e condisci con il succo di limone, la scorza grattugiata, sale e pepe. Mescola bene e servi subito.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Varianti e Consigli</h2>
+    <div class="variants">
+      <div class="variant">
+        <h3>Con acciughe</h3>
+        <p>Per un sapore più deciso, aggiungi un paio di filetti di acciuga sott'olio sminuzzati all'aglio soffritto.</p>
+      </div>
+      <div class="variant">
+        <h3>Con mandorle</h3>
+        <p>Aggiungi delle mandorle a lamelle tostate per una nota croccante.</p>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../ricette.html">Torna alle Ricette</a>
+      <a href="../../index.html">Torna alla Home</a>
+    </div>
+  </div>
+
+  <script src="../js/portion-selector.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const ingredients = [
+        { name: "broccoli", amount: 500, unit: "g" },
+        { name: "limone", amount: 1, unit: "" },
+        { name: "olio extravergine di oliva", amount: 2, unit: "cucchiai" },
+        { name: "aglio", amount: 1, unit: "spicchio" }
+      ];
+
+      new PortionSelector(
+        document.querySelector('.container-recipe'),
+        4, // porzioni originali
+        ingredients
+      );
+    });
+  </script>
+</body>
+</html>

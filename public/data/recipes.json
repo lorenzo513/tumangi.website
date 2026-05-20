@@ -1,0 +1,773 @@
+{
+  "recipes": [
+    {
+      "id": "insalata-caprese",
+      "title": "Insalata Caprese",
+      "url": "ricette/caprese.html",
+      "summary": "La semplicità campana: pomodori maturi, mozzarella e basilico.",
+      "ingredients": [
+        "pomodori",
+        "formaggi",
+        "basilico",
+        "olio"
+      ],
+      "servings": 2,
+      "time": 10,
+      "difficulty": "Facile",
+      "tags": [
+        "estate",
+        "veloce",
+        "vegetariana"
+      ],
+      "steps": [
+        "Taglia i pomodori a fette di circa 1 cm.",
+        "Taglia la mozzarella a fette della stessa altezza dei pomodori e lasciala un momento a temperatura ambiente.",
+        "Alterna le fette di pomodoro e mozzarella sul piatto, aggiungendo foglie di basilico tra gli strati.",
+        "Condire con olio extravergine d'oliva, un filo (poco) di aceto balsamico, sale e pepe.",
+        "Servire subito, accompagnando con pane tostato per rendere il pasto bilanciato."
+      ],
+      "curiosities": [
+        "Nata a Capri negli anni '50, richiama i colori della bandiera italiana.",
+        "La scelta della mozzarella (bufala o fior di latte) cambia la struttura e il sapore del piatto."
+      ],
+      "balanced_meal": {
+        "note": "Per renderla un pasto completo aggiungi pane come fonte di carboidrati complessi.",
+        "components": [
+          "verdure",
+          "proteine",
+          "carboidrati",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungere rucola e pinoli tostati per un tocco croccante.",
+        "Usare glassa di aceto balsamico per una versione più dolce-salata."
+      ]
+    },
+    {
+      "id": "zuppa-farro-lenticchie-pomodoro",
+      "title": "Zuppa di farro, lenticchie e pomodoro",
+      "url": "ricette/zuppa-farro-lenticchie-pomodoro.html",
+      "summary": "Zuppa rustica e nutriente con farro e lenticchie, perfetta per le stagioni fredde.",
+      "ingredients": [
+        "farro",
+        "lenticchie",
+        "pomodori",
+        "cipolla",
+        "carote",
+        "sedano",
+        "olio"
+      ],
+      "servings": 4,
+      "time": 45,
+      "difficulty": "Facile",
+      "tags": [
+        "inverno",
+        "zuppe",
+        "legumi",
+        "vegetariana",
+        "sana"
+      ],
+      "steps": [
+        "Prepara un soffritto con cipolla, carota e sedano in olio extravergine d'oliva.",
+        "Aggiungi le lenticchie lavate, la polpa di pomodoro e una foglia di alloro, fai insaporire qualche minuto.",
+        "Unisci il farro e copri con brodo vegetale caldo.",
+        "Cuoci a fuoco basso per 25-35 minuti, aggiungendo brodo se necessario, fino a quando farro e lenticchie sono teneri.",
+        "Regola di sale e pepe e servi con un filo d'olio a crudo e prezzemolo fresco."
+      ],
+      "curiosities": [
+        "Farro e legumi sono abbinamenti tipici della cucina contadina: economici e sazianti.",
+        "Conservata in frigorifero la zuppa acquista sapore il giorno dopo."
+      ],
+      "balanced_meal": {
+        "note": "Già bilanciata: cereali + legumi + verdure. Aggiungi semi o formaggio per più proteine.",
+        "components": [
+          "verdure",
+          "carboidrati",
+          "proteine",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungere cubetti di pancetta per una versione non vegetariana.",
+        "Frullare una parte per una consistenza più cremosa."
+      ]
+    },
+    {
+      "id": "cous-cous-zucchina-carota-ceci",
+      "title": "Cous cous con Zucchina, Carota e Ceci",
+      "url": "ricette/cous-cous-zucchina-carota-ceci.html",
+      "summary": "Piatto con verdure, ceci e spezie in un brodo profumato dal sapore dolce-salato.",
+      "ingredients": [
+        "cous-cous",
+        "zucchine",
+        "carote",
+        "legumi",
+        "albicocche",
+        "uvetta",
+        "zenzero",
+        "curcuma",
+        "cumino",
+        "cannella"
+      ],
+      "servings": 4,
+      "time": 45,
+      "difficulty": "Media",
+      "tags": [
+        "vegetariana",
+        "speziato",
+        "frutta-secca",
+        "piatto-unico",
+        "tradizionale"
+      ],
+      "steps": [
+        "Scalda l'olio e fai appassire cipolla e aglio con zenzero fresco.",
+        "Aggiungi le spezie (curcuma, cumino, cannella, zafferano) per sprigionarne i profumi.",
+        "Cuoci le carote, poi zucchine e ceci insieme.",
+        "Versa il brodo caldo, aggiungi albicocche, uvetta e miele. Fai sobbollire per 15-20 minuti.",
+        "Prepara il cous cous versando il brodo caldo, copri e lascia riposare 10 minuti.",
+        "Lavora il cous cous con una forchetta per sgranarlo e mantecarlo.",
+        "Monta il cous cous al centro e versa il tagine e le verdure attorno. Decora con coriandolo fresco."
+      ],
+      "curiosities": [
+        "Il cous cous è il piatto nazionale del Marocco, tradizionalmente cotto al vapore in un cuscus.",
+        "Il tagine è sia la pentola che il nome del piatto: il coperchio conico fa condensa il vapore.",
+        "L'equilibrio dolce-salato con frutta secca è caratteristico della cucina marocchina.",
+        "Tradizionalmente consumato il venerdì sera, spesso condiviso dalla stessa ciotola."
+      ],
+      "balanced_meal": {
+        "note": "Piatto unico completo e tradizionale: cereali, proteine vegetali, verdure, spezie e frutta secca.",
+        "components": [
+          "carboidrati",
+          "proteine",
+          "verdure",
+          "spezie",
+          "frutta-secca"
+        ]
+      },
+      "variants": [
+        "Con carne: aggiungi pollo o agnello a cubetti insieme alla cipolla.",
+        "Con pesce: versione costiera con pesce bianco e lime anziché miele.",
+        "Cous cous sette verdure: aggiungi cavolo, melanzane, pomodori e patate.",
+        "Più erbe aromatiche: menta, coriandolo e prezzemolo fresco."
+      ]
+    },
+    {
+      "id": "pasta-ceci-zucchine-risottata",
+      "title": "Pasta, Ceci e Zucchine Risottata",
+      "url": "ricette/pasta-ceci-zucchine.html",
+      "summary": "Un primo piatto cremoso e avvolgente, cotto come un risotto per un risultato da chef senza fatica.",
+      "ingredients": [
+        "pasta",
+        "zucchine",
+        "ceci",
+        "cipolla",
+        "aglio",
+        "olio",
+        "rosmarino"
+      ],
+      "servings": 2,
+      "time": 25,
+      "difficulty": "Facile",
+      "tags": [
+        "vegetariana",
+        "cremoso",
+        "piatto-unico",
+        "legumi"
+      ],
+      "steps": [
+        "Prepara un soffritto con cipolla e aglio in olio d'oliva.",
+        "Aggiungi le zucchine a cubetti e cuoci finché non sono tenere.",
+        "Tosta la pasta direttamente nella pentola per un minuto.",
+        "Aggiungi i ceci e copri con brodo vegetale caldo, cuocendo come un risotto.",
+        "A fine cottura, manteca con un filo d'olio a crudo e servi."
+      ],
+      "curiosities": [
+        "La cottura 'risottata' della pasta permette di ottenere una cremosità naturale grazie all'amido rilasciato, senza aggiungere grassi come panna o formaggio.",
+        "I ceci sono una fonte eccellente di proteine vegetali e fibre, rendendo il piatto completo e nutriente."
+      ],
+      "balanced_meal": {
+        "note": "Questo piatto è già un pasto unico e bilanciato, combinando carboidrati, proteine vegetali e verdure.",
+        "components": [
+          "carboidrati",
+          "proteine",
+          "verdure",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungere un cucchiaio di parmigiano o pecorino a fine cottura per un sapore più intenso.",
+        "Unire un peperoncino al soffritto per una versione piccante.",
+        "Grattugiare la scorza di un limone a fine cottura per un tocco di freschezza."
+      ]
+    },
+    {
+      "id": "hummus-verdure",
+      "title": "Hummus con Verdure a Scelta",
+      "url": "ricette/hummus-verdure.html",
+      "summary": "Un classico mediorientale cremoso e versatile, perfetto come antipasto o spuntino sano.",
+      "ingredients": [
+        "ceci",
+        "tahina",
+        "limone",
+        "aglio",
+        "olio",
+        "cumino",
+        "paprika",
+        "verdure"
+      ],
+      "servings": 4,
+      "time": 15,
+      "difficulty": "Facilissima",
+      "tags": [
+        "vegetariana",
+        "vegana",
+        "antipasto",
+        "spuntino",
+        "legumi",
+        "veloce"
+      ],
+      "steps": [
+        "Sciacqua bene i ceci precotti.",
+        "Frulla i ceci con tahina, succo di limone, aglio, cumino e sale.",
+        "Aggiungi a filo acqua fredda e olio fino a ottenere una consistenza cremosa.",
+        "Servi in una ciotola con un filo d'olio, paprika e bastoncini di verdure fresche."
+      ],
+      "curiosities": [
+        "La parola 'hummus' in arabo significa 'ceci'.",
+        "La tahina (crema di sesamo) è fondamentale per il sapore caratteristico dell'hummus."
+      ],
+      "balanced_meal": {
+        "note": "Per un pasto completo, accompagna con pane pita o gallette come fonte di carboidrati.",
+        "components": [
+          "verdure",
+          "proteine",
+          "carboidrati",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungere una barbabietola precotta per un hummus rosa e dolciastro.",
+        "Unire un avocado maturo per una versione più cremosa e delicata.",
+        "Aggiungere harissa o peperoncino per un tocco piccante."
+      ]
+    },
+    {
+      "id": "pasta-tonno-pomodori",
+      "title": "Pasta con Tonno e Pomodori",
+      "url": "ricette/pasta-tonno-pomodori.html",
+      "summary": "Un classico intramontabile, veloce e saporito, che unisce i sapori del mare e della terra.",
+      "ingredients": [
+        "pasta",
+        "tonno",
+        "pomodori",
+        "aglio",
+        "olio",
+        "prezzemolo",
+        "peperoncino"
+      ],
+      "servings": 2,
+      "time": 20,
+      "difficulty": "Facile",
+      "tags": [
+        "pesce",
+        "veloce",
+        "piatto-unico"
+      ],
+      "steps": [
+        "Cuoci la pasta in acqua salata.",
+        "Prepara un sugo soffriggendo aglio (e peperoncino) in olio, poi aggiungi i pomodorini.",
+        "Aggiungi il tonno sgocciolato e sgranato al sugo.",
+        "Scola la pasta al dente e saltala nella padella con il sugo, aggiungendo un po' di acqua di cottura.",
+        "Servi con prezzemolo fresco tritato."
+      ],
+      "curiosities": [
+        "Un piatto 'da studenti' per la sua rapidità, ma amato da tutti.",
+        "Il tonno sott'olio è preferibile per un sugo più saporito."
+      ],
+      "balanced_meal": {
+        "note": "Piatto già completo e bilanciato. Puoi arricchirlo con olive taggiasche.",
+        "components": [
+          "carboidrati",
+          "proteine",
+          "verdure",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungere olive nere e capperi per un sapore più mediterraneo.",
+        "Grattugiare scorza di limone a fine cottura per un tocco fresco.",
+        "Mantecare con un cucchiaio di formaggio spalmabile per una versione cremosa."
+      ]
+    },
+    {
+      "id": "uova-pomodoro",
+      "title": "Uova in Purgatorio (al Pomodoro)",
+      "url": "ricette/uova-pomodoro.html",
+      "summary": "Un piatto della tradizione contadina, veloce, economico e incredibilmente saporito.",
+      "ingredients": [
+        "uova",
+        "pomodori",
+        "aglio",
+        "olio",
+        "peperoncino",
+        "basilico",
+        "pane"
+      ],
+      "servings": 2,
+      "time": 20,
+      "difficulty": "Facilissima",
+      "tags": [
+        "vegetariana",
+        "veloce",
+        "economico",
+        "piatto-unico"
+      ],
+      "steps": [
+        "Soffriggi aglio e peperoncino in olio, poi versa la passata di pomodoro e cuoci per 10 minuti.",
+        "Crea delle conche nel sugo e rompi un uovo in ciascuna.",
+        "Copri e cuoci per 5-7 minuti, finché l'albume è rappreso e il tuorlo è ancora morbido.",
+        "Servi caldo con basilico fresco e pane per la scarpetta."
+      ],
+      "curiosities": [
+        "Il nome 'in Purgatorio' si riferisce alle uova (anime) immerse nel sugo rosso (fuoco).",
+        "Esistono versioni simili in altre culture, come la Shakshuka e gli Huevos Rancheros."
+      ],
+      "balanced_meal": {
+        "note": "Un pasto unico perfettamente bilanciato, ideale per una cena veloce e nutriente.",
+        "components": [
+          "verdure",
+          "proteine",
+          "carboidrati",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Sostituire l'aglio con la cipolla per un sugo più dolce.",
+        "Aggiungere Parmigiano, mozzarella o feta a fine cottura per un tocco filante.",
+        "Arricchire il sugo con peperoni o melanzane a cubetti."
+      ]
+    },
+    {
+      "id": "frittata-patate",
+      "title": "Frittata di Patate",
+      "url": "ricette/frittata-patate.html",
+      "summary": "Un secondo piatto classico, sostanzioso e amato da tutti. Perfetto caldo, ma delizioso anche freddo.",
+      "ingredients": [
+        "uova",
+        "patate",
+        "cipolla",
+        "parmigiano",
+        "olio",
+        "prezzemolo"
+      ],
+      "servings": 3,
+      "time": 30,
+      "difficulty": "Facile",
+      "tags": [
+        "vegetariana",
+        "secondo-piatto",
+        "contorno",
+        "economico"
+      ],
+      "steps": [
+        "Pela e taglia le patate a fettine sottili o cubetti. Affetta la cipolla (if used).",
+        "Cuoci le patate (e cipolla) in padella con olio a fuoco basso per circa 15 minuti, salando a metà cottura.",
+        "Sbatti le uova con Parmigiano, prezzemolo, sale e pepe.",
+        "Versa le uova sulle patate in padella e cuoci a fuoco basso con coperchio per circa 10 minuti.",
+        "Gira la frittata e cuoci dall'altro lato per 3-5 minuti, finché non è dorata."
+      ],
+      "curiosities": [
+        "Il gesto di 'girare la frittata' è un modo di dire italiano per cambiare opinione o situazione.",
+        "È la cugina italiana della 'tortilla de patatas' spagnola."
+      ],
+      "balanced_meal": {
+        "note": "Servita con un'abbondante insalata verde, diventa un pasto unico completo e gustoso.",
+        "components": [
+          "verdure",
+          "proteine",
+          "carboidrati",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungere cubetti di pancetta o speck alle patate in cottura.",
+        "Aggiungere rosmarino o salvia tritati al composto di uova.",
+        "Aggiungere cubetti di provola, scamorza o mozzarella per un cuore filante."
+      ]
+    },
+    {
+      "id": "pollo-patate-broccoli-forno",
+      "title": "Pollo, Patate e Broccoli al Forno",
+      "url": "ricette/pollo-patate-broccoli-forno.html",
+      "summary": "Pollo succoso con patate croccanti e broccoli, cotto al forno per una cena semplice e bilanciata.",
+      "ingredients": [
+        "pollo",
+        "patate",
+        "broccoli",
+        "olio",
+        "aglio",
+        "rosmarino",
+        "sale",
+        "pepe",
+        "paprika"
+      ],
+      "servings": 4,
+      "time": 50,
+      "difficulty": "Facile",
+      "tags": [
+        "secondo-piatto",
+        "forno",
+        "pollo",
+        "piatto-unico",
+        "familiare"
+      ],
+      "steps": [
+        "Pela le patate e tagliale a tocchetti; dividi i broccoli in cimette e lava il pollo.",
+        "In una ciotola capiente unisci pollo, patate, 2 cucchiai di olio, aglio schiacciato, rosmarino, sale, pepe e paprika; mescola bene.",
+        "Disponi pollo e patate su una teglia rivestita, non sovrapporre troppo; cuoci in forno preriscaldato a 200°C per 30 minuti.",
+        "Aggiungi i broccoli conditi con il restante olio e continua la cottura altri 15–20 minuti, fino a doratura e tenerezza.",
+        "Sforna e servi caldo, eventualmente con una spruzzata di limone o prezzemolo fresco."
+      ],
+      "curiosities": [
+        "È una preparazione popolare perché combina proteine e contorno nella stessa teglia, riducendo i tempi di pulizia.",
+        "Per patate più croccanti prova a lasciarle in forno scoperto gli ultimi 5–10 minuti a temperature più alte."
+      ],
+      "balanced_meal": {
+        "note": "Piatto unico: proteine (pollo), carboidrati (patate) e verdure (broccoli).",
+        "components": [
+          "proteine",
+          "carboidrati",
+          "verdure",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungi cipolle rosse a spicchi per un sapore più dolce.",
+        "Sostituisci il rosmarino con timo o paprika affumicata per una nota più intensa."
+      ]
+    },
+    {
+      "id": "scaloppine-tacchino-spinaci",
+      "title": "Scaloppine di Tacchino con Spinaci",
+      "url": "ricette/scaloppine-tacchino-spinaci.html",
+      "summary": "Scaloppine sottili di tacchino saltate in padella e servite con un letto di spinaci saltati, un piatto leggero e veloce, ideale per pranzi e cene veloci.",
+      "ingredients": [
+        "tacchino",
+        "spinaci",
+        "farina",
+        "olio extravergine di oliva",
+        "burro",
+        "vino bianco (facoltativo)",
+        "sale",
+        "pepe",
+        "aglio",
+        "limone",
+        "prezzemolo"
+      ],
+      "servings": 4,
+      "time": 20,
+      "difficulty": "Facile",
+      "tags": [
+        "secondo-piatto",
+        "rapido",
+        "proteine",
+        "tacchino",
+        "verdure"
+      ],
+      "steps": [
+        "Asciuga le scaloppine con carta assorbente e infarinale leggermente su entrambi i lati, scrollando via l'eccesso di farina.",
+        "Scalda una padella con 1 cucchiaio di olio e una noce di burro; rosola velocemente le scaloppine 1–2 minuti per lato a fuoco vivace fino a doratura. Sala e pepa. Tieni le scaloppine al caldo.",
+        "Nella stessa padella aggiungi un filo d'olio e uno spicchio d'aglio schiacciato; aggiungi gli spinaci freschi lavati e scola brevemente a fiamma viva fino a che appassiscono. Sala e pepa, aggiungi un goccio di limone se piace e incorpora un po' di prezzemolo tritato.",
+        "Se desideri, sfuma la padella con un cucchiaio di vino bianco e lascia evaporare rapidamente, poi rimetti le scaloppine in padella per un minuto per insaporire.",
+        "Disponi gli spinaci sul piatto e adagia sopra le scaloppine; aggiungi un filo d'olio a crudo e una spruzzata di limone se gradito."
+      ],
+      "curiosities": [
+        "Per scaloppine più morbide puoi battere le fette sottili di tacchino con un mattarello o con un batticarne usando carta forno.",
+        "Se vuoi una salsa più ricca aggiungi una noce di panna o un cucchiaio di senape mescolati al fondo di cottura (variante non ipocalorica)."
+      ],
+      "balanced_meal": {
+        "note": "Piatto bilanciato: proteine magre dal tacchino e vitamine/ferro dagli spinaci; aggiungi una porzione di carboidrati a lato se necessario.",
+        "components": [
+          "proteine",
+          "verdure",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Sostituisci il tacchino con fesa di pollo per un'alternativa simile.",
+        "Per una versione più saporita, aggiungi capperi dissalati o olive tritate agli spinaci."
+      ]
+    },
+    {
+      "id": "purea-di-patate",
+      "title": "Purea di Patate",
+      "url": "ricette/purea-di-patate.html",
+      "summary": "Un classico contorno cremoso e avvolgente, perfetto per accompagnare ogni piatto.",
+      "ingredients": [
+        "patate",
+        "latte",
+        "burro",
+        "sale",
+        "noce moscata"
+      ],
+      "servings": 4,
+      "time": 30,
+      "difficulty": "Facile",
+      "tags": [
+        "contorno",
+        "vegetariano",
+        "facile"
+      ],
+      "steps": [
+        "Lava bene le patate e lessale con la buccia in abbondante acqua salata finché non saranno tenere (circa 20-25 minuti). Scolale e lasciale intiepidire leggermente.",
+        "Sbuccia le patate ancora calde e passale nello schiacciapatate direttamente in una pentola capiente.",
+        "Aggiungi il burro a pezzetti alle patate schiacciate e mescola bene finché non si sarà sciolto. Incorpora gradualmente il latte caldo, mescolando energicamente con un cucchiaio di legno o una frusta per ottenere una purea liscia e senza grumi. Aggiusta di sale e noce moscata grattugiata.",
+        "Servi la purea di patate calda, guarnita a piacere con una noce di burro o del prezzemolo tritato."
+      ],
+      "curiosities": [],
+      "balanced_meal": {
+        "note": "Ottimo contorno, per un pasto completo abbinala a una fonte proteica e verdure fresche.",
+        "components": [
+          "carboidrati",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungere del parmigiano grattugiato o un altro formaggio a pasta filata per un sapore più ricco.",
+        "Incorpora erbe aromatiche tritate come rosmarino o timo per un tocco profumato."
+      ]
+    },
+    {
+      "id": "polpette-al-sugo",
+      "title": "Polpette al Sugo",
+      "url": "ricette/polpette-al-sugo.html",
+      "summary": "Un classico intramontabile della cucina italiana: polpette morbide e saporite, immerse in un ricco sugo di pomodoro.",
+      "ingredients": [
+        "carne-macinata",
+        "pane",
+        "latte",
+        "uova",
+        "parmigiano",
+        "aglio",
+        "prezzemolo",
+        "olio",
+        "passata-di-pomodoro",
+        "cipolla",
+        "basilico",
+        "sale",
+        "pepe"
+      ],
+      "servings": 4,
+      "time": 45,
+      "difficulty": "Media",
+      "tags": [
+        "secondo-piatto",
+        "carne",
+        "sugo",
+        "familiare"
+      ],
+      "steps": [
+        "Metti il pane raffermo a bagno nel latte. In una ciotola capiente, unisci la carne macinata, l'uovo, il parmigiano, l'aglio, il prezzemolo, sale e pepe. Strizza bene il pane dal latte e aggiungilo al composto. Amalgama tutti gli ingredienti fino ad ottenere un impasto omogeneo. Forma delle piccole polpette.",
+        "In una padella capiente, scalda un filo d'olio. Friggi le polpette a fuoco medio-alto fino a quando non saranno dorate su tutti i lati. Non cuocerle completamente, dovranno finire la cottura nel sugo. Scolale su carta assorbente.",
+        "Nella stessa padella (o in una pulita), aggiungi 2 cucchiai di olio e fai soffriggere la cipolla tritata fino a quando non sarà appassita. Aggiungi la passata di pomodoro, un pizzico di sale e qualche foglia di basilico. Porta a ebollizione, poi abbassa la fiamma e lascia sobbollire per circa 10-15 minuti.",
+        "Aggiungi le polpette nel sugo, mescola delicatamente e continua la cottura a fuoco basso per altri 15-20 minuti, o finché le polpette non saranno ben cotte e il sugo si sarà addensato. Servi caldo."
+      ],
+      "curiosities": [],
+      "balanced_meal": {
+        "note": "Piatto unico se accompagnato da pane o purea di patate per i carboidrati.",
+        "components": [
+          "proteine",
+          "verdure",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Per una versione più leggera, puoi cuocere le polpette direttamente nel sugo, facendole rosolare leggermente prima di aggiungere la passata, oppure cuocerle in forno.",
+        "Le polpette al sugo sono perfette servite con un contorno di purea di patate, riso bianco o pane casereccio per fare la scarpetta."
+      ]
+    },
+    {
+      "id": "broccoli-al-limone",
+      "title": "Broccoli al Limone",
+      "url": "ricette/broccoli-al-limone.html",
+      "summary": "Un contorno fresco e leggero, perfetto per accompagnare secondi piatti di carne o pesce.",
+      "ingredients": [
+        "broccoli",
+        "limone",
+        "olio",
+        "aglio",
+        "sale",
+        "pepe",
+        "peperoncino"
+      ],
+      "servings": 4,
+      "time": 20,
+      "difficulty": "Facile",
+      "tags": [
+        "contorno",
+        "vegetariano",
+        "leggero",
+        "verdure"
+      ],
+      "steps": [
+        "Lava i broccoli e dividili in cimette. Se i gambi sono teneri, puoi pelarli e tagliarli a rondelle.",
+        "Cuoci i broccoli a vapore per circa 8-10 minuti, o finché non saranno teneri ma ancora croccanti. In alternativa, puoi lessarli in acqua bollente salata per 5-7 minuti.",
+        "In una padella, scalda l'olio extravergine di oliva con lo spicchio d'aglio (e il peperoncino, se lo usi). Aggiungi i broccoli cotti e saltali per un paio di minuti.",
+        "Spegni il fuoco, rimuovi l'aglio e condisci con il succo di limone, la scorza grattugiata, sale e pepe. Mescola bene e servi subito."
+      ],
+      "curiosities": [],
+      "balanced_meal": {
+        "note": "Contorno di verdure, da abbinare a una fonte proteica e carboidrati per un pasto completo.",
+        "components": [
+          "verdure",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Per un sapore più deciso, aggiungi un paio di filetti di acciuga sott'olio sminuzzati all'aglio soffritto.",
+        "Aggiungi delle mandorle a lamelle tostate per una nota croccante."
+      ]
+    },
+    {
+      "id": "pasta-fagioli",
+      "title": "Pasta e Fagioli",
+      "url": "ricette/pasta-fagioli.html",
+      "summary": "Un piatto rustico e nutriente della cucina contadina italiana, ricco di proteine vegetali e fibre.",
+      "ingredients": [
+        "pasta",
+        "legumi",
+        "pomodori",
+        "verdure",
+        "carote",
+        "cipolla"
+      ],
+      "servings": 4,
+      "time": 40,
+      "difficulty": "Facile",
+      "tags": [
+        "classico",
+        "vegetariano",
+        "comfort-food"
+      ],
+      "steps": [
+        "Scalda l'olio e fai appassire la cipolla tritata per 3-4 minuti, poi aggiungi aglio, carote e sedano.",
+        "Versa i pomodori pelati e lascia cuocere per 5 minuti.",
+        "Aggiungi il brodo caldo e i fagioli, quindi lascia sobbollire per 10 minuti.",
+        "Aggiungi la pasta e cuoci secondo le indicazioni sulla confezione.",
+        "Servi calda in ciotole profonde, condita con olio extravergine crudo."
+      ],
+      "curiosities": [
+        "La pasta e fagioli è un piatto della tradizione contadina italiana, economico e nutriente.",
+        "La combinazione di pasta e fagioli crea proteine complete, rendendola ideale per vegetariani."
+      ],
+      "balanced_meal": {
+        "note": "Un piatto completo e bilanciato che contiene tutti i nutrienti essenziali.",
+        "components": [
+          "verdure",
+          "proteine",
+          "carboidrati",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungi peperoncino rosso per una versione piccante.",
+        "Inserisci cavolo nero per un piatto ancora più nutriente.",
+        "Aggiungi spinaci o zucchine fresche per variare le verdure."
+      ]
+    },
+    {
+      "id": "risotto-zucchine-liquirizia-seppie",
+      "title": "Risotto Vialone Nano, Zucchine alla Liquirizia e Seppie",
+      "url": "ricette/risotto-zucchine-liquirizia-seppie.html",
+      "summary": "Un piatto sofisticato e elegante che unisce la cremosità del vialone nano, la dolcezza sorprendente della liquirizia e la tenerezza delle seppie. Perfetto per cene speciali.",
+      "ingredients": [
+        "riso",
+        "cereali",
+        "zucchine",
+        "pesce",
+        "seppie"
+      ],
+      "servings": 4,
+      "time": 50,
+      "difficulty": "Media",
+      "tags": [
+        "mare",
+        "sofisticato",
+        "vialone-nano",
+        "pesce",
+        "cena-speciale"
+      ],
+      "steps": [
+        "Prepara le seppie in umido: rosola in olio con aglio e sfuma con vino bianco, lascia sobbollire 15-20 minuti.",
+        "Cuoci le zucchine a bastoncini con liquirizia grattugiata fino a leggera doratura.",
+        "Prepara il risotto: tostatura riso, sfumatura vino, cottura graduale con brodo di pesce.",
+        "Manteca il risotto con olio",
+        "Assembla i piatti: risotto al centro, zucchine e seppie in umido sopra, olio crudo e prezzemolo fresco."
+      ],
+      "curiosities": [
+        "Il vialone nano è il riso più nobile per i risotti: ha una struttura corta che assorbe brodo creando cremosità naturale.",
+        "La liquirizia aggiunge una dimensione gustativa inaspettata: dolce, speziata e leggermente amara.",
+        "Le seppie sono ricche di proteine nobili e Omega-3, perfette per una cucina consapevole."
+      ],
+      "balanced_meal": {
+        "note": "Un piatto completo e sofisticato: cereali, proteine di qualità, verdure e grassi sani perfettamente equilibrati.",
+        "components": [
+          "verdure",
+          "proteine",
+          "carboidrati",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Sostituisci le seppie con gamberi rossi per una versione ancora più delicata.",
+        "Ometti le seppie e usa brodo vegetale per una versione vegetariana."
+      ]
+    },
+    {
+      "id": "insalata-arance",
+      "title": "Insalata di Arance, Finocchi e Olive",
+      "url": "ricette/insalata-arance.html",
+      "summary": "Insalata fresca e profumata di arance, finocchio e olive; ideale come contorno o piatto leggero invernale.",
+      "ingredients": [
+        "arance",
+        "finocchio",
+        "verdure",
+        "olive",
+        "olio"
+      ],
+      "servings": 2,
+      "time": 15,
+      "difficulty": "Facile",
+      "tags": [
+        "inverno",
+        "veloce",
+        "contorno",
+        "vegetariana"
+      ],
+      "steps": [
+        "Pela a vivo le arance e tagliale a fette sottili raccogliendo il succo.",
+        "Affetta il finocchio sottilmente e, se vuoi, lascialo riposare per 5 minuti.",
+        "Emulsiona olio, aceto (o succo di limone), sale e pepe aggiungendo il succo d'arancia raccolto.",
+        "Unisci arance, finocchio, olive e rucola, condisci e mescola delicatamente.",
+        "Impiatta, guarnisci e servi subito."
+      ],
+      "curiosities": [
+        "L'abbinamento arancia-finocchio è classico nelle cucine mediterranee per il contrasto dolce-croccante.",
+        "Le arance forniscono vitamina C: ottime in inverno per sostenere le difese immunitarie."
+      ],
+      "balanced_meal": {
+        "note": "Ottima come contorno; per un piatto unico aggiungi legumi o noci per aumentare proteine e grassi sani.",
+        "components": [
+          "verdure",
+          "frutta",
+          "grassi-sani"
+        ]
+      },
+      "variants": [
+        "Aggiungi noci o semi tostati per croccantezza e proteine.",
+        "Aggiungi feta sbriciolata o ricotta salata per un tocco sapido."
+      ]
+    }
+  ]
+}
