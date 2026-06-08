@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumangi - Regolamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Stili specifici per il "libretto" */
+        .book-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 80vh; /* Altezza fissa del contenitore */
+            overflow: hidden;
+        }
+
+        /* Testata fissa */
+        .book-header {
+            padding: 20px 40px 10px 40px;
+            background: #fff;
+            z-index: 10;
+            border-bottom: 1px solid #f5f0e6;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        /* Area contenuto scrollabile */
+        .book-content-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px 40px;
+            scrollbar-width: thin;
+            scrollbar-color: #d89f41 #f5f0e6;
+        }
+
+        /* Personalizzazione scrollbar per Chrome/Safari */
+        .book-content-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .book-content-scroll::-webkit-scrollbar-track {
+            background: #f5f0e6;
+        }
+        .book-content-scroll::-webkit-scrollbar-thumb {
+            background-color: #d89f41;
+            border-radius: 10px;
+        }
+
+        /* Footer fisso */
+        .book-footer {
+            padding: 15px 40px;
+            background: #fdfaf5;
+            border-top: 1px solid #eee;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .page {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: #f0eada;
+            border: 2px dashed #d89f41;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8c6d36;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .component-item {
+            text-align: center;
+            padding: 15px;
+            background: #fdfaf5;
+            border: 1px solid #e0d7cc;
+            border-radius: 8px;
+        }
+
+        .component-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f5f0e6;
+            color: #3e4a2e;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #d89f41;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .nav-dots {
+            text-align: center;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #d89f41;
+        }
+
+        .btn-export {
+            background-color: #3e4a2e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn-export:hover {
+            background-color: #2d6a3a;
+        }
+
+        /* STILI PER LA STAMPA / PDF */
+        @media print {
+            body { background: white; padding: 0; margin: 0; }
+            .nav-menu, .book-header, .book-footer, .nav-links {
+                display: none !important;
+            }
+            .book-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                max-width: none;
+                height: auto;
+                overflow: visible;
+                display: block;
+            }
+            .book-content-scroll {
+                overflow: visible;
+                padding: 0;
+                display: block;
+            }
+            .page {
+                display: block !important;
+                page-break-after: always;
+                opacity: 1 !important;
+                transform: none !important;
+                margin-bottom: 50px;
+            }
+            .page:last-child {
+                page-break-after: auto;
+            }
+            h1, h2 { color: black; border-bottom: 1px solid #ccc; }
+        }
+
+        @media (max-width: 600px) {
+            .book-container {
+                height: 85vh;
+                margin: 10px;
+            }
+            .book-header, .book-content-scroll, .book-footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="book-container">
+        <!-- TESTATA FISSA -->
+        <div class="book-header">
+            <div class="pagination">
+                <button class="btn" id="prevBtn" onclick="changePage(-1)">Indietro</button>
+                <div class="nav-dots" id="navDots"></div>
+                <button class="btn" id="nextBtn" onclick="changePage(1)">Avanti</button>
+            </div>
+            <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+        </div>
+
+        <!-- CONTENUTO SCROLLABILE -->
+        <div class="book-content-scroll" id="scrollContainer">
+
+            <!-- PAGINA 1: COMPONENTI (Sommario) -->
+            <div class="page active" id="page-0">
+                <h2>Componenti di Gioco</h2>
+                <p>Ecco cosa troverai all'interno della scatola di Tumangi:</p>
+                <div class="component-grid">
+                    <div class="component-item">
+                        <span class="component-icon">🥩</span>
+                        <strong>Carte Proteine</strong>
+                    </div>
+                    <div class="component-item">
+                        <span class="component-icon">🍝</span>
+                        <strong>Carte Carboidrati</strong>
+                    </div>
+                    <div class="component-item">
+                        <span class="component-icon">🥦</span>
+                        <strong>Carte Verdura</strong>
+                    </div>
+                    <div class="component-item">
+                        <span class="component-icon">🍎</span>
+                        <strong>Carte Frutta</strong>
+                    </div>
+                    <div class="component-item">
+                        <span class="component-icon">📜</span>
+                        <strong>Carte Ricetta</strong>
+                    </div>
+                    <div class="component-item">
+                        <span class="component-icon">⚡</span>
+                        <strong>Carte Evento</strong>
+                    </div>
+                </div>
+                <div class="image-placeholder">
+                    [Foto d'insieme dei componenti]
+                </div>
+            </div>
+
+            <!-- PAGINE DETTAGLIO COMPONENTI -->
+            <div class="page" id="page-1">
+                <h2>🥩 Carte Fonte Proteiche</h2>
+                <p>Queste carte rappresentano la fonte proteica principale del tuo pasto.</p>
+                <ul>
+                    <li>Legumi</li>
+                    <li>Pesce</li>
+                    <li>Carne Bianca</li>
+                    <li>Carne Rossa</li>
+                    <li>Uova></li>
+                    <li>Formaggi</li>
+                </ul>
+                <div class="image-placeholder">[Immagine Carte Proteine]</div>
+            </div>
+
+            <div class="page" id="page-2">
+                <h2>🍝 Carte Fonte di Carboidrati</h2>
+                <p>La base energetica dei tuoi pasti.</p>
+                <ul>
+                    <li>Pasta</li>
+                    <li>Pane e Sostituti</li>
+                    <li>Patate</li>
+                    <li>Cereali e carboidrati in chicco</li>
+                </ul>
+                <div class="image-placeholder">[Immagine Carte Carboidrati]</div>
+            </div>
+
+            <div class="page" id="page-3">
+                <h2>🥦 Carte Verdura</h2>
+                <p>Essenziali per un pasto bilanciato. Possono essere giocate più volte per ottenere bonus.</p>
+                <div class="image-placeholder">[Immagine Carte Verdura]</div>
+            </div>
+
+            <div class="page" id="page-4">
+                <h2>🍎 Carte Frutta</h2>
+                <p>Ogni pasto deve concludersi con una carta frutto per essere considerato completo.</p>
+                <div class="image-placeholder">[Immagine Carte Frutta]</div>
+            </div>
+
+            <div class="page" id="page-5">
+                <h2>📜 Carte Ricetta</h2>
+                <p>Obiettivi speciali che richiedono combinazioni specifiche di ingredienti per essere reclamate e ottenere punti extra.</p>
+                <div class="image-placeholder">[Immagine Carte Ricetta]</div>
+            </div>
+
+            <div class="page" id="page-6">
+                <h2>⚡ Carte Evento</h2>
+                <p>Imprevisti che cambiano le regole del gioco. Possono influenzare il mercato o le azioni dei giocatori.
+                   Esistono carte evento di due tipi, quelli che vanno risolti immediatamente quando rivelate oppure quelle che vanno pescate dagli utenti per essere risolte</p>
+                <div class="image-placeholder">[Immagine Carte Evento]</div>
+            </div>
+
+            <!-- PAGINA 8: INTRO E ALLESTIMENTO -->
+            <div class="page" id="page-7">
+                <h1>TUMANGI: REGOLAMENTO</h1>
+                <div class="image-placeholder">
+                    [Immagine Copertina Tumangi]
+                </div>
+                <h2>Allestimento</h2>
+                <p>Per preparare la tua partita a Tumangi, segui le istruzioni di posizionamento dei mazzi e dei componenti.</p>
+                <div class="image-placeholder">
+                    [Allegato 1: Allestimento del gioco]
+                </div>
+            </div>
+
+            <!-- PAGINA 9: INIZIO E PRIMO TURNO -->
+            <div class="page" id="page-8">
+                <h2>Inizio del gioco</h2>
+                <p>Ogni giocatore pesca la sua mano iniziale composta da:</p>
+                <ul>
+                    <li class="list-style-legumes">1 carta proteina</li>
+                    <li class="list-style-potato">1 carta carboidrato</li>
+                    <li class="list-style-apple">1 carta frutto</li>
+                    <li class="list-style-carrot">2 carte verdura</li>
+                </ul>
+                <p><strong>Totale: 5 carte.</strong></p>
+                <div class="fun-fact">
+                    <p>Se peschi una carta "Evento" durante questa fase, scartala e pescane un'altra.</p>
+                </div>
+                <p>Limite mano: massimo <strong>7 carte</strong> in qualunque momento.</p>
+
+                <h2>Primo turno</h2>
+                <p>Per decidere il primo giocatore lanciate un dado: il numero più alto inizia e riceve il dealer.</p>
+            </div>
+
+            <!-- PAGINA 10: AZIONI -->
+            <div class="page" id="page-9">
+                <h2>Azioni possibili</h2>
+                <p>Ogni turno è possibile preparare 2 pasti: pranzo e cena.</p>
+                <p>Durante il tuo turno puoi compiere fino a <strong>3 azioni</strong> a scelta tra:</p>
+                <ol>
+                    <li>Pescare una carta <strong>scoperta</strong> dal mercato.</li>
+                    <li>Giocare una carta per formare un pasto.</li>
+                    <li>Reclamare una carta di fine pasto (generico o ricetta).</li>
+                </ol>
+
+                <div class="balanced-meal">
+                    <h3>Composizione del Pasto</h3>
+                    <p>Ogni giornata prevede due pasti, ciascuno composto da:</p>
+                    <div class="meal-component"><h4>Proteine</h4><p>1 carta fonte proteica</p></div>
+                    <div class="meal-component"><h4>Carboidrati</h4><p>1 carta fonte di carboidrati</p></div>
+                    <div class="meal-component"><h4>Verdura</h4><p>1 o più carte verdura</p></div>
+                    <div class="meal-component"><h4>Frutta</h4><p>1 carta frutto</p></div>
+                </div>
+            </div>
+
+            <!-- PAGINA 11: DETTAGLI AZIONI E EVENTI -->
+            <div class="page" id="page-10">
+                <h2>Pasti e Ricette</h2>
+                <p><strong>Pasto Generico:</strong> Componi il pasto liberamente. Ottieni token +1 per ogni verdura extra aggiunta.</p>
+                <p><strong>Ricetta:</strong> Se completi una ricetta presente sul tavolo, reclami la carta "Ricetta".</p>
+
+                <h2>Carte Evento</h2>
+                <div class="curiosity-card">
+                    <h3>⚠️ Attenzione agli Eventi!</h3>
+                    <ul>
+                                            <li>Alcune carte Evento si attivano immediatamente quando vengono rivelate nel mercato (tranne "3x2" che viene tenuta dal giocatore che l'ha rivelata e
+                        può essere conservata per 2 turni).</li>
+                    <li>Altre carte Evento restano sul tabellone.
+                    Finché c'è un imprevisto, non si possono ricaricare ingredienti dal relativo mazzo dalle carte coperte.
+                    I giocatori possono scegliere di pescarli ed eseguirli subito.</li>
+                    <li>Durante la composizione del mazzo potete scegliere se inserire solo eventi immediati (10 per mazzo) oppure inserire solo eventi strategici (6 per mazzo) per una partita più complessa.</li>
+                    <li>Se vuoi un giusto equilibrio inserisci 6 carte a risoluzione immediata casuali e 4 eventi strategici</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- PAGINA 12: FINE GIORNATA -->
+            <div class="page" id="page-11">
+                <h2>Fine della giornata</h2>
+                <p>Il primo a finire entrambi i pasti prende il <strong>Gettone +1 punto</strong> e attende gli altri.</p>
+                <p>L'ultimo a finire riceve il <strong>Gettone -1 punto</strong> </p>
+
+                <div class="fun-fact">
+                    <p>Se rimani da solo a completare i pasti, hai disposizione un turno. Ogni turno extra necessaria ti farà pescare un gettonte -1 punto.</p>
+                </div>
+
+                <h2>Termine della partita</h2>
+                <p>La partita termina dopo la <strong>quinta giornata</strong>. Si procede al conteggio dei punti totali.</p>
+                <div class="image-placeholder">
+                    [Allegato 2: Determinazione del punteggio]
+                </div>
+            </div>
+
+            <!-- PAGINA 13: PUNTEGGIO -->
+            <div class="page" id="page-12">
+                <h2>Bonus e Malus</h2>
+                <table>
+                    <tr><th>Azione</th><th>Punti</th></tr>
+                    <tr><td>Tutte le fonti proteiche usate in una settimana</td><td>+7</td></tr>
+                    <tr><td>Hai collezionato tutti i colori del benessere</td><td>+5</td></tr>
+                </table>
+
+                <h2>Punteggio Fonti Proteiche</h2>
+                <p>I punteggi sono assegnati se i giocatori rimangono all'interno degli intervalli consigliati.</p>
+                <p>L'unica eccezione sono i Legumi che se mangiati 3 volte daranno 8 punti, in caso un giocatore sia riuscito a
+                giocarli 4 o più volte daranno 9 punti.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Freq. Consigliata</th>
+                            <th>Punteggio (Max 10)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Legumi</td><td>3-4+</td><td>8-9</td></tr>
+                        <tr><td>Pesce</td><td>3-4</td><td>7</td></tr>
+                        <tr><td>Carne Bianca</td><td>2-3</td><td>5</td></tr>
+                        <tr><td>Uova</td><td>3-4</td><td>6</td></tr>
+                        <tr><td>Formaggi</td><td>2-3</td><td>4</td></tr>
+                        <tr><td>Carne Rossa</td><td>1</td><td>3</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="curiosity-card">
+                    <h3>⚠️ Attenzione alle Frequenze!</h3>
+                    <p>Cerca di rispettare tutte le frequenza, i punteggi possono cambiare le sorti della partita.
+                        Se mangi troppe volte un alimento potresti non dare spazio agli altri alimenti</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER FISSO -->
+        <div class="book-footer">
+            <button class="btn-export" onclick="exportToPDF()">
+                <span>📄</span> Esporta Regolamento PDF
+            </button>
+        </div>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Torna alla Home</a>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    let currentPage = 0;
+    const pages = document.querySelectorAll('.page');
+    const dotsContainer = document.getElementById('navDots');
+    const progressFill = document.getElementById('progressFill');
+    const scrollContainer = document.getElementById('scrollContainer');
+    const nextBtn = document.getElementById('nextBtn'); // Ottieni il riferimento al pulsante "Avanti"
+
+    // Inizializza puntini
+    pages.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.onclick = () => showPage(index);
+        dotsContainer.appendChild(dot);
+    });
+
+    function showPage(index) {
+        if (index < 0 || index >= pages.length) return;
+
+        pages[currentPage].classList.remove('active');
+        document.querySelectorAll('.dot')[currentPage].classList.remove('active');
+
+        currentPage = index;
+
+        pages[currentPage].classList.add('active');
+        document.querySelectorAll('.dot')[currentPage].classList.add('active');
+
+        // Update UI
+        document.getElementById('prevBtn').style.visibility = currentPage === 0 ? 'hidden' : 'visible';
+
+        if (currentPage === pages.length - 1) {
+            nextBtn.style.visibility = 'hidden'; // Nasconde il pulsante "Avanti"
+        } else {
+            nextBtn.style.visibility = 'visible'; // Mostra il pulsante "Avanti"
+            nextBtn.innerText = 'Avanti'; // Assicurati che il testo sia "Avanti"
+        }
+
+        // Update Progress
+        const progress = ((currentPage + 1) / pages.length) * 100;
+        progressFill.style.width = progress + '%';
+
+        // Reset scroll position to top when changing page
+        scrollContainer.scrollTop = 0;
+    }
+
+    function changePage(step) {
+        showPage(currentPage + step);
+    }
+
+    function exportToPDF() {
+        const element = document.querySelector('.book-container'); // L'elemento da convertire in PDF
+
+        // Nascondi i pulsanti di navigazione e il footer per la generazione del PDF
+        const prevBtn = document.getElementById('prevBtn');
+        const bookFooter = document.querySelector('.book-footer');
+        const bookHeader = document.querySelector('.book-header');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (prevBtn) prevBtn.style.display = 'none';
+        if (nextBtn) nextBtn.style.display = 'none'; // Nascondi anche il pulsante "Avanti" durante l'esportazione
+        if (bookFooter) bookFooter.style.display = 'none';
+        if (bookHeader) bookHeader.style.display = 'none';
+        if (navLinks) navLinks.style.display = 'none';
+
+        // Mostra tutte le pagine per la generazione del PDF
+        pages.forEach(page => {
+            page.style.display = 'block';
+            page.style.opacity = '1';
+            page.style.transform = 'none';
+        });
+
+        const opt = {
+            margin:       [10, 10, 10, 10], // Margini in mm (top, left, bottom, right)
+            filename:     'regolamento_tumangi.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2, logging: true, dpi: 192, letterRendering: true },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        html2pdf().set(opt).from(element).save().then(() => {
+            // Ripristina la visualizzazione dopo la generazione del PDF
+            if (prevBtn) prevBtn.style.display = '';
+            if (nextBtn) { // Ripristina la visibilità del pulsante "Avanti" in base alla pagina corrente
+                if (currentPage === pages.length - 1) {
+                    nextBtn.style.visibility = 'hidden';
+                } else {
+                    nextBtn.style.visibility = 'visible';
+                    nextBtn.innerText = 'Avanti';
+                }
+            }
+            if (bookFooter) bookFooter.style.display = '';
+            if (bookHeader) bookHeader.style.display = '';
+            if (navLinks) navLinks.style.display = '';
+
+            // Ripristina la visualizzazione delle pagine
+            pages.forEach((page, index) => {
+                if (index !== currentPage) {
+                    page.style.display = 'none';
+                }
+            });
+            pages[currentPage].style.display = 'block'; // Assicurati che la pagina corrente sia visibile
+        });
+    }
+
+    // Init
+    showPage(0);
+</script>
+
+</body>
+</html>
